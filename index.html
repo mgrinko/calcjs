@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Windows 95</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="shortcut icon" href="img/favicon.png" />
+
+  <!-- >>> style -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- style <<< -->
+
+  <!-- >>> js -->
+  <script src="/js/dnd.js" defer></script>
+  <script src="/js/desk.js" defer></script>
+  <script src="/js/calc.js" defer></script>
+  <script src="/js/icon.js" defer></script>
+  <script src="/js/panel.js" defer></script>
+  <script src="/js/output.js" defer></script>
+  <script src="/js/input.js" defer></script>
+  <script src="/js/app.js" defer></script>
+  <!-- js <<< -->
+</head>
+<body>
+
+  <div class="desk js-calc">
+
+    <!-- >>> icon -->
+    <div class="desk__icon js-calc__icon">
+      <img class="desk__icon-image" src="http://raebear.net/comp/icons/appicons1.gif" alt="">
+      <p class="desk__icon-title">Calculator</p>
+    </div>
+    <!-- icon <<< -->
+
+    <!-- hidden="true" -->
+    <div class="desk__calc js-calc__calc">
+
+      <!-- >>> top-panel -->
+      <div class="calc__top-panel js-calc__top-panel">
+        <img class="top-panel__icon" src="http://raebear.net/comp/icons/appicons1.gif" alt="">
+        <span class="top-panel__title">Calculator</span>
+
+        <div class="top-panel__buttons">
+          <button class="top-panel__button top-panel__button--hide js-calc__top-button">_</button>
+          <button class="top-panel__button top-panel__button--inactive js-calc__top-button">O</button>
+          <button class="top-panel__button top-panel__button--close js-calc__top-button js-calc__top-button--close">X</button>
+        </div>
+      </div>
+      <!-- top-panel <<< -->
+
+      <!-- >>> excess-panel -->
+      <div class="calc__excess-panel">
+        <b>B</b>y <b>E</b>vgen <b>V</b>olontyr
+      </div>
+      <!-- excess-panel <<< -->
+
+      <!-- >>> output -->
+      <div class="calc__output js-calc__output">0.</div>
+      <!-- output <<< -->
+
+      <!-- >>> input -->
+      <div class="calc__input js-calc__input">
+        <!-- 1 -->
+        <!-- <button class="calc__button" data-option="backspace">Backspace</button> -->
+        <button class="calc__button"></button>
+        <!-- <button class="calc__button" data-option="reset-last">CE</button> -->
+        <button class="calc__button"></button>
+        <button class="calc__button" data-option="reset">C</button>
+        <!-- 2 -->
+        <button class="calc__button" data-number="7">7</button>
+        <button class="calc__button" data-number="8">8</button>
+        <button class="calc__button" data-number="9">9</button>
+        <button class="calc__button" data-symbol="division">/</button>
+        <button class="calc__button" data-symbol="square">sqrt</button>
+        <!-- 3 -->
+        <button class="calc__button" data-number="4">4</button>
+        <button class="calc__button" data-number="5">5</button>
+        <button class="calc__button" data-number="6">6</button>
+        <button class="calc__button" data-symbol="multiply">*</button>
+        <!-- <button class="calc__button" data-symbol="percent">%</button> -->
+        <button class="calc__button"></button>
+        <!-- 4 -->
+        <button class="calc__button" data-number="1">1</button>
+        <button class="calc__button" data-number="2">2</button>
+        <button class="calc__button" data-number="3">3</button>
+        <button class="calc__button" data-symbol="minus">-</button>
+        <!-- <button class="calc__button" data-symbol="fraction">1/x</button> -->
+        <button class="calc__button"></button>
+        <!-- 5 -->
+        <button class="calc__button" data-number="0">0</button>
+        <!-- <button class="calc__button" data-symbol="alter">+/-</button> -->
+        <button class="calc__button"></button>
+        <button class="calc__button" data-symbol="dote">.</button>
+        <button class="calc__button" data-symbol="plus">+</button>
+        <button class="calc__button" data-symbol="equally">=</button>
+      </div>
+      <!-- input <<< -->
+
+    </div>
+  </div>
+
+
+</body>
+</html>
