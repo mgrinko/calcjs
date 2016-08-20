@@ -27,6 +27,7 @@ class Input /*extends Calc*/ {
     }
 
     if (buttonData.number) {
+      this._operatorAdded = false;
       this._renderOutput(buttonData.number);
 
     } else if (buttonData.symbol) {
@@ -71,7 +72,7 @@ class Input /*extends Calc*/ {
 
   _backspace() {
     let outputNow = calc._output.getElement().innerHTML;
-    
+
     if (outputNow.length <= 1) {
       calc._output.getElement().innerHTML = '0';
       return;
